@@ -1,16 +1,6 @@
 from random import randint
 
 
-""" Calculates the difference between biggest and smallest number
-then returns the value as a percent """
-
-
-def diffCalc(biggest, smallest):
-    decNum = (biggest - smallest) / biggest
-    percent = decNum * 100
-    return percent
-
-
 roll = 0
 one = 0
 two = 0
@@ -23,8 +13,8 @@ rollAmount = 10
 """ Checks the average 20 times with each time the dice is being rolled 2 as
 many as the last time
 then store the number of times a certain face has been rolled in variables
-after that check which is the biggest and smallest and send it to the function
-diffCalc lastly print the results. """
+after that check which is the biggest and smallest and calculates the % 
+lastly print the results. """
 for j in range(0, 21):
     for i in range(0, rollAmount + 1):
         roll = randint(1, 6)
@@ -42,6 +32,7 @@ for j in range(0, 21):
             six += 1
     bigNum = max(one, two, three, four, five, six)
     smallNum = min(one, two, three, four, five, six)
-    perc = diffCalc(bigNum, smallNum)
-    print(f"For {rollAmount} rolls, the difference is {round(perc, 2)}%")
+    decNum = (bigNum - smallNum) / bigNum
+    percent = decNum * 100
+    print(f"For {rollAmount} rolls, the difference is {round(percent, 2)}%")
     rollAmount *= 2
