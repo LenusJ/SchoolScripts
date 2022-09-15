@@ -19,5 +19,4 @@ for i in range(0, amount):
         minVal = x
     numSum += x
 
-
 print(f"\nAverage, min, and max are {numSum/amount}, {minVal}, {maxVal}")
