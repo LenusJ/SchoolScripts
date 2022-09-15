@@ -13,7 +13,7 @@ rollAmount = 10
 """ Checks the average 20 times with each time the dice is being rolled 2 as
 many as the last time
 then store the number of times a certain face has been rolled in variables
-after that check which is the biggest and smallest and calculates the % 
+after that check which is the biggest and smallest and calculates the %
 lastly print the results. """
 for j in range(0, 21):
     for i in range(0, rollAmount + 1):
