@@ -7,7 +7,7 @@ zero = 0
 
 if numIn > 0:
     x = [int(num) for num in str(numIn)]
-
+    
     for i in x:
         if i == 0:
             zero += 1
