@@ -6,14 +6,12 @@ even = 0
 zero = 0
 
 if numIn > 0:
-    x = [int(num) for num in str(numIn)]
-    
-    for i in x:
-        if i == 0:
+    for i in str(numIn):
+        if i in "0":
             zero += 1
-        elif i % 2:
+        elif i in "13579":
             odd += 1
-        elif i % 2 == 0:
+        elif i in "2468":
             even += 1
     print("Zeros:", zero)
     print("Odd:", odd)
