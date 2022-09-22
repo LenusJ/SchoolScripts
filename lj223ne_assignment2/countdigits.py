@@ -13,8 +13,10 @@ if numIn > 0:
             odd += 1
         elif i in "2468":
             even += 1
+
     print("Zeros:", zero)
     print("Odd:", odd)
     print("Even:", even)
+
 else:
     print("Error: Not a positive int!")
