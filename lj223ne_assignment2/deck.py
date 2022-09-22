@@ -27,10 +27,15 @@ def shuffleDeck(d):
     return shuf
 
 
+def addToHand(deck, hand):
+    for i in range(0, 5):
+        hand.insert(i, deck[i])
+        deck.pop(i)
+        print(hand[i])
+
+
 deck = buildDeck()
 deck = shuffleDeck(deck)
 hand = []
-
-for i in range(0, 5):
-    hand.insert(i, deck[i])
-    print(hand[i])
+print("My hand: ")
+addToHand(deck, hand)
