@@ -28,10 +28,18 @@ def is_palindrome(s):
     return palindrome
 
 
-s = input("Enter a palindrome: ")
+def printRes(p, s):
+    if p:
+        print(f"{s} is a palindrome.")
+    else:
+        print(f"{s} is not a palindrome.")
 
-palindrome = is_palindrome(s)
-if palindrome:
-    print(f"{s} is a palindrome.")
-else:
-    print(f"{s} is not a palindrome.")
+
+s = "Was it a rat I saw?"
+printRes(is_palindrome(s), s)
+s = "A nut for a jar of tuna."
+printRes(is_palindrome(s), s)
+s = "God save the queen!"
+printRes(is_palindrome(s), s)
+s = "Ni talar bra latin!"
+printRes(is_palindrome(s), s)
