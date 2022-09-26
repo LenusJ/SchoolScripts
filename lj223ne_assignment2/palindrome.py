@@ -20,12 +20,7 @@ def is_palindrome(s):
     for x in string:
         revString = [x] + revString
 
-    if string == revString:
-        palindrome = True
-    else:
-        palindrome = False
-
-    return palindrome
+    return string == revString
 
 
 def printRes(p, s):
