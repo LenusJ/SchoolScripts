@@ -4,7 +4,7 @@ def is_palindrome(s):
     """Takes a string s and makes it lowercase, converts it into a list
     and removes all spaces, symbols and numbers from the list.
     It then makes a second list in reverse order.
-    Lastly compares the normal and reversed list if they are the same
+    Lastly compares the normal and reversed list if they are the same.
     returns True if both lists are the same otherwise returns False.
     In short: returns True if provided string is a palindrome"""
     s = s.lower()
