@@ -15,7 +15,7 @@ many as the last time
 then store the number of times a certain face has been rolled in variables
 after that check which is the biggest and smallest and calculates the %
 lastly print the results. """
-for j in range(0, 21):
+for j in range(0, 20):
     for i in range(0, rollAmount + 1):
         roll = randint(1, 6)
         if roll == 1:
