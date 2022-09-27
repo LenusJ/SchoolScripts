@@ -1,6 +1,6 @@
 
 def first_last(s):
-    print(f"First and last in '{s}': ", s[0], s[len(s)-1])
+    return s[0], s[len(s)-1]
 
 
 def char_types(s):
@@ -12,8 +12,7 @@ def char_types(s):
             v += 1
         elif i in "bcdfghjklmnpqrstvwxz":
             c += 1
-    print(f"In that sentence, the number of vowels is {v} and the number of "
-          + f"consonants is {c}")
+    return v, c
 
 
 def char_symbol_number(s):
@@ -28,13 +27,16 @@ def char_symbol_number(s):
             nums += 1
         else:
             syms += 1
-    print(f"In the sentence '{s}' the number of letters is {letters}, "
-          + f"symbols is {syms} and numbers is {nums}")
+    return letters, nums, syms
 
 
 s1 = input("Enter a sentence: ")
 s2 = input("Enter another sentence: ")
+v, c = char_types(s1)
+letters, nums, syms = char_symbol_number(s2)
 
-first_last(s1)
-char_types(s1)
-char_symbol_number(s2)
+print(f"First and last in '{s1}': ", first_last(s1))
+print(f"In that sentence, the number of vowels is {v} and the number of "
+      + f"consonants is {c}")
+print(f"In the sentence '{s2}' the number of letters is {letters}, "
+      + f"symbols is {syms} and numbers is {nums}")
